@@ -1,0 +1,14 @@
+
+
+@layer base{
+    .board-wrapper{
+        @apply  relative overflow-hidden flex shadow-sm flex-col
+        flex shadow-sm  h-auto bg-white border border-gray-200  text-black md:w-full  sm:w-full my-1;
+        border-radius:8px;
+    }
+    .board-header {
+        height:100px;
+        @apply p-4
+
+    }
+}

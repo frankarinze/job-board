@@ -1,0 +1,65 @@
+
+.searchbar-container{
+    @apply w-auto relative overflow-hidden flex shadow-sm 
+}
+
+.searchbar-container input#search {
+    @apply w-full h-14 bg-white border border-gray-200 float-left text-black pl-4 rounded
+}
+
+.searchbar-container input#search:focus, .searchbar-container input#search:active{
+    @apply outline-none px-12 
+}
+
+.searchbar-container input#search:-ms-input-placeholder {
+    @apply text-white
+}
+
+.searchbar-container.btn{
+    @apply absolute top-2/4 ml-4 mt-4 z-10 text-white 
+  }
+  .searchbar-container .feather-search {
+    @apply absolute m-4 border-blue-600
+  }
+
+  .searchbar-container .feather-search:focus, .searchbar-container .feather-search:active {
+    @apply hidden
+  }
+ 
+  .searchbar-container button.btn{
+    @apply rounded-r-lg bg-blue-600 border-0 h-14 w-32 text-white -ml-4 
+  }
+ 
+   @layer base {
+    /* .searchbar-container button.btn{
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+   
+    border: none;
+    background: #232833;
+    height: 50px;
+    width: 50px;
+    color: #4f5b66;
+    /* opacity: 0; */
+    /* font-size: 10pt;
+  } */
+
+  /* .feather {
+    width: 24px;
+    height: 24px;
+    stroke: red;
+    stroke-width: 6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+  } */
+  .searchbar-container .feather {
+    stroke:#446EF8;
+    stroke-width: 1;
+  }
+} 

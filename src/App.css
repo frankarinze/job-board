@@ -1,0 +1,132 @@
+@tailwind base;
+@layer base {
+  .hamburger {
+    transition: all 0.4s ease-in-out 0s;
+  }
+  .mobile-menu-tray {
+    -webkit-transition: height 200ms ease-in;
+    -moz-transition: height 200ms ease-in;
+    -o-transition: height 200ms ease-in;
+    transition: height 200ms ease-in;
+  }
+  .menu-item {
+    color: #fff;
+  }
+  .wrapper {
+    padding: 5% 5% 0 5%;
+  }
+  .job-board-wrapper {
+    width: 85%;
+    height: 25vh;
+    min-height: 200px;
+    overflow: auto;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10%;
+  }
+  .job-list-wrapper {
+    width: 80%;
+    height: auto;
+    min-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    padding-right:10px
+  }
+   
+    .feather-inactive {
+      stroke: #DBDBDB;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: #DBDBDB;
+    }
+  
+    .feather-active {
+      stroke: #F5236B;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      fill: #F5236B;
+    }
+
+}
+
+@tailwind components;
+@tailwind utilities;
+@import '~antd/dist/antd.css';
+@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
+body {
+  font-family: "Poppins", sans-serif;
+  background: #fafafa;
+  line-height: 1.2rem;
+}
+
+.d-none {
+  display: inline-block!important;
+}
+
+.responsiveMenuTrigger .responsiveMenuTriggerItem li.first {
+  width: 25px;
+}
+
+/* ---------------------------------------------------
+    TEXT STYLE
+----------------------------------------------------- */
+
+.text {
+  color: #9A9CB5;
+}
+
+.ant-btn-primary {
+  color: #fff;
+  background: #446EF8;
+  border-color: #446EF8;
+}
+
+.logo {
+  height: 21px;
+  margin: 10px;
+}
+
+.menu-open {
+  background: #6d7fcc;
+}
+
+.navbar-item {
+  color: blue;
+  /* background: #fff; */
+}
+
+.navbar-item:hover {
+  color: red;
+  background: #fff;
+}
+
+.items-menu {
+  color: #fff;
+  background: #6d7fcc;
+}
+
+.sidebar-header>span {
+  position: relative;
+  float: right;
+  margin: 0.5em;
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+}
+
+/* ---------------------------------------------------
+    MASTER STYLE
+----------------------------------------------------- */
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+.content {
+  padding: 20px;
+  margin-left: 0;
+  height: 100vh;
+  background-color: #F1F2F8;
+}

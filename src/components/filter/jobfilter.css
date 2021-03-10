@@ -1,0 +1,83 @@
+@layer base {  
+  .select-box {
+    flex-direction: column;
+  }
+  
+  .select-box .options-container {
+    background: #fff;
+    color: #5d5d5d;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 3px;
+    overflow: hidden;
+  
+    order: 1;
+  }
+  
+  .selected {
+    background: #fff;
+    border-radius: 8px;
+    margin-bottom: 8px;
+    color: black;
+    position: relative;
+    order: 0;
+  }
+  
+  .selected::after {
+    content: "";
+    background: url("../../assets/ic/plus-circle.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 50%;
+    width: 32px;
+    right: 0;
+    top: 25%;
+    bottom: 0;
+    transition: all 0.2s;
+  }
+  
+  .select-box .options-container.active {
+    max-height: 240px;
+    opacity: 1;
+    overflow-y: scroll;
+  }
+  
+  .select-box .options-container.active + .selected::after {
+    transform: rotate(130deg);
+    /* top: -6px; */
+    margin-right:5px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar {
+    width: 3px;
+    background: #f1f1f1;
+    border-radius: 2px;
+  }
+  
+  .select-box .options-container::-webkit-scrollbar-thumb {
+    background: #525861;
+    border-radius: 0 8px 8px 0;
+  }
+  
+  .select-box .option,
+  .selected {
+    padding: 12px 24px;
+    cursor: pointer;
+  }
+  
+  .select-box .option:hover {
+    background: #DBDBDB;
+    color:#5d5d5d;
+  }
+  
+  .select-box label {
+    cursor: pointer;
+  }
+  
+  .select-box .option .radio {
+    display: none;
+  }
+  }
