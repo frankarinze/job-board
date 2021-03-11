@@ -1,18 +1,30 @@
 @layer base {
     .board-wrapper {
-     border-radius: 5px;
-        @apply relative overflow-hidden flex shadow-sm flex-col h-auto bg-white  border border-gray-200 text-black md:w-full
-        sm:w-full my-1
+        border-radius: 5px;
+        @apply relative overflow-hidden flex shadow-sm flex-col h-auto bg-white border border-gray-200 text-black md:w-full sm:w-full my-1;
     }
     /* flex shadow-sm  bg-white border border-gray-200 text-black md: w-full sm:w-full my-1; */
     .board-header {
-        height: auto;
+        /* height: auto;
+        overflow: auto;
+        position: -webkit-sticky;
+        position: sticky; */
+        top: 10%;
         @apply px-6 pt-2 pb-6
     }
     .board-body {
+        /* width: 80%; */
+        height: 60vh;
+        min-height: 100px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
         @apply p-5
     }
     .board-top-header {
+        /* width: 85%; */
+        /* height: 25vh;
+        min-height: 200px; */
         @apply flex flex-row justify-between pt-4
     }
     .board-header-title {
@@ -30,11 +42,10 @@
     .location-dot {
         height: 12px;
         min-width: 12px;
-        @apply bg-gray-300 border border-gray-300 rounded-lg m-1 mr-1 
+        @apply bg-gray-300 border border-gray-300 rounded-lg m-1 mr-1
     }
     .board-date-posted {
-        @apply  text-green-400
-        
+        @apply text-green-400
     }
     /* .board-description {
         @apply text-gray-500
