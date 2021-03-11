@@ -8,7 +8,10 @@
     }
     .board-header {
         height:100px;
-        @apply p-4
+        @apply p-5
 
+    }
+    .board-body {
+        @apply p-5
     }
 }
