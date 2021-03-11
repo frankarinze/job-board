@@ -17,8 +17,8 @@ export const Board = (props) => {
                             </h3>
                             <div className="flex flex-row ">
 
-                            <p className="board-company">Code Academy</p>
-                            <p className="board-location"><div className="location-dot"></div>Paris, France</p>
+                                <p className="board-company">Code Academy</p>
+                                <p className="board-location"><div className="location-dot"></div>Paris, France</p>
                             </div>
                         </div>
                         <FeatherIcon className="feather-active" icon="heart" size="24" />
@@ -33,30 +33,58 @@ export const Board = (props) => {
 
                 </div>
                 <div className="board-body">
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
-                    <p>Hello job board</p>
+                    <div className="board-description-about">
+
+                        <h3>About Code Academy</h3>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                    </div>
+
+                    <div className="board-description-job">
+                        <h3>Job description</h3>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p><p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p> <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p> <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p> <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                        <p>Hello job board</p>
+                    </div>
                 </div>
 
             </div>

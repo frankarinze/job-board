@@ -6,6 +6,20 @@
         flex shadow-sm  h-auto bg-white border border-gray-200  text-black 
         p-6 md:w-full  sm:w-full my-1;
         border-radius:5px;
+        cursor: pointer;
+    }
+
+    .card-wrapper:hover , .card-wrapper:focus{
+        @apply  relative overflow-hidden flex shadow-sm flex-col
+        flex shadow-xl h-auto bg-white border text-black border-blue-600 
+        p-6 md:w-full  sm:w-full my-1;
+        border-radius:5px;
+        cursor: pointer;
+    }
+    .green-dot {
+        height:12px;
+        min-width: 12px;
+        @apply bg-green-400 border border-green-200 rounded-lg m-0.5 mr-2
     }
 }
 .card-header{
@@ -26,13 +40,6 @@
     @apply mt-2 flex flex-row 
 }
 
-@layer base{
-    .green-dot {
-        height:12px;
-        min-width: 12px;
-        @apply bg-green-400 border border-green-200 rounded-lg m-0.5 mr-2
-    }
-}
 .card-description {
     @apply text-gray-500 
 }
