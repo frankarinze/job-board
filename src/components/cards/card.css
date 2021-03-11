@@ -5,7 +5,7 @@
         @apply  relative overflow-hidden flex shadow-sm flex-col
         flex shadow-sm  h-auto bg-white border border-gray-200  text-black 
         p-6 md:w-full  sm:w-full my-1;
-        border-radius:8px;
+        border-radius:5px;
     }
 }
 .card-header{
