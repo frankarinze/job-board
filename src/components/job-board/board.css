@@ -50,4 +50,15 @@
     /* .board-description {
         @apply text-gray-500
     } */
+    .about-company-title {
+        @apply text-base text-gray-700 my-3
+    }
+    .job-description-title {
+        @apply text-base text-gray-700 my-3
+    }
+    .job-content {
+        @apply text-gray-500;
+        line-height: 1.5;
+        word-break: break-word;
+    }
 }
