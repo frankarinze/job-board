@@ -33,8 +33,8 @@ export const JobFilter = (props) => {
             <div>
                 <div class="select-box mr-4 flex ">
                     <div className={!state.isOpen ?
-                        "options-container shadow-sm " :
-                        "options-container shadow-sm  active"}>
+                        "options-container shadow-xl " :
+                        "options-container shadow-xl  active"}>
                         {items.map((item) => (
                             <div
                                 className="option"
