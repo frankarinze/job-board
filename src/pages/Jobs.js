@@ -10,7 +10,7 @@ const Jobs = (props) => {
   return (
     <div className="m-8 flex-column ">
       <SearchBar />
-      <div className="md:flex">
+      <div className="md:flex relative ">
         <JobFilter />
         <JobFilter />
         <JobFilter />
@@ -43,7 +43,6 @@ const Jobs = (props) => {
         </div>
         <div className="flex h-full flex-col job-board-wrapper">
          <Board/>
-      
         </div>
 
 
