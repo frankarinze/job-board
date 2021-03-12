@@ -21,6 +21,14 @@
         flex-direction: column;
         @apply p-5 py-6
     }
+    .board-body-empty{
+        height: 10vh;
+        min-height: 100px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        @apply p-5 py-6
+    }
     .board-top-header {
         /* width: 85%; */
         /* height: 25vh;
