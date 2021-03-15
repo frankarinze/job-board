@@ -36,7 +36,7 @@ export const Board = ({ id, JobTitle, company, datePosted, country, city, iLike,
                                 <p className="board-location"><div className="location-dot"></div>{city}{country}</p>
                             </div>
                         </div>
-                        <FeatherIcon className="feather-active" icon="heart" size="24" />
+                        <FeatherIcon className={`${iLike === 'like' ? 'feather-active' : 'feather-inactive'}`} icon="heart" size="24" />
                     </div>
                     <div className="board-top-header">
 

@@ -2,10 +2,10 @@ export const jobsData = [
     {
         id:0,
         company: "ECi Software Solutions",
-        datePosted: "2020-11-11",
+        datePosted: "1 week ago",
         country: "Canada",
         city: 'Ontario',
-        iLike: true,
+        iLike: 'like',
         aboutCompany: 'For more than 30 years, ECI Software Solutions has been providing industry-specific, cloud-based business management software and services to small and medium-sized businesses. With divisions focused on manufacturing, wholesale/retail distribution, building and construction, and field service, ECIs solutions integrate into every aspect of a customers business to help them level the playing field, run day-to-day operations more efficiently, and free them up to focus on what matters most. It’s how business gets done.',
         jobDescription: 'To apply for this position, please attach a detailed resume that demonstrates your qualifications and skill set pertaining to this position. Applications without a resume will not be considered. ECI Lasso is seeking a Frontend Developer to continue to provide the best in Software Solutions to small and medium-sized businesses ECI Lasso is the developer of the leading cloud-based, on-demand Customer Relationship Management (CRM) software for the new-home-building industry. We have experienced consistent growth during the last decade and our user base asks a lot of our system. Scale, reliability, and innovation keep us learning on a daily basis. You will join our front-end team to enhance and maintain our user interfaces. We have distributed systems hosted in AWS, which are presented to our users through an Angular/React frontend.',
         jobTitle: 'Frontend developer',
@@ -19,10 +19,10 @@ export const jobsData = [
     {
         id:1,
         company: "Ubisoft",
-        datePosted: "2020-11-16",
+        datePosted: "1 week ago",
         country: "Canada",
         city: 'Montreal',
-        iLike: false,
+        iLike: 'null',
         aboutCompany: `At Ubisoft Montreal, a preeminent developer of video games located in Montreal’s dynamic Mile-End neighbourhood since 1997, we offer a work environment unique in the industry for allowing you to build and cultivate games that are part of critically acclaimed, iconic AAA franchises of international repute.
         When you join Ubisoft Montreal, you enter a community of passionate, extraordinary developers connected by their need to innovate, to be creative and to work with the latest technology. You will discover a world where employees enjoy constant career advancement, a supportive learning environment, and competitive compensation packages and some great gaming industry specific perks.`,
         jobDescription: `
@@ -46,10 +46,10 @@ Seek opportunities proactively to broaden and deepen knowledge base and proficie
     {
         id:2,
         company: "MarcoPolo learning ",
-        datePosted: "2020-11-16",
+        datePosted: 'today',
         country: "London",
         city: ' ',
-        iLike: false,
+        iLike: 'null',
         aboutCompany: `
         MarcoPolo is reinventing early learning children's media for a new generation. The company is a top global publisher of award-winning educational games and videos for children age 3-7. We inspire children to become explorers and life-long learners. We make STEAM learning an adventure, filled with the thrills and joys of discovery, for early learners, parents and educators.
 
@@ -81,10 +81,10 @@ Excellent working practices of producing clear and up-to-date documentation
     {
         id:3,
         company: 'PepperHQ ',
-        datePosted: "2020-12-20",
+        datePosted: 'today',
         country: "London",
         city: ' ',
-        iLike: false,
+        iLike: 'null',
         aboutCompany: `
         At Pepper we're aiming to build the leading mobile platform for digitising traditional restaurant, coffee and bar businesses. Our platform consists of iOS and Android Apps, management web portals, backend services, e-pos integrations and much more.
 
@@ -125,10 +125,10 @@ In particular you'll need:
     {
         id:4,
         company: 'Mistplay ',
-        datePosted: "2020-12-20",
+        datePosted: "1 month ago",
         country: "France",
         city: ' ',
-        iLike: false,
+        iLike: 'null',
         aboutCompany: `
         At Pepper we're aiming to build the leading mobile platform for digitising traditional restaurant, coffee and bar businesses. Our platform consists of iOS and Android Apps, management web portals, backend services, e-pos integrations and much more.
 
@@ -168,10 +168,10 @@ In particular you'll need:
     {
         id:5,
         company: 'Johnson Controls ',
-        datePosted: "2020-12-20",
+        datePosted: "1 month ago",
         country: "France",
         city: ' ',
-        iLike: false,
+        iLike: 'null',
         aboutCompany: `
         At Pepper we're aiming to build the leading mobile platform for digitising traditional restaurant, coffee and bar businesses. Our platform consists of iOS and Android Apps, management web portals, backend services, e-pos integrations and much more.
 
@@ -211,10 +211,10 @@ In particular you'll need:
     {
         id:6,
         company: 'Tenet corp ',
-        datePosted: "2020-11-11",
+        datePosted: "today",
         country: "United states",
         city: ' ',
-        iLike: false,
+        iLike: 'null',
         aboutCompany: `
         At Pepper we're aiming to build the leading mobile platform for digitising traditional restaurant, coffee and bar businesses. Our platform consists of iOS and Android Apps, management web portals, backend services, e-pos integrations and much more.
 

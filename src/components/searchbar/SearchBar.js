@@ -4,15 +4,15 @@ import FeatherIcon from 'feather-icons-react';
 import "./searchbar.css";
 
 
-const SearchBar = () => {
+const SearchBar = ({value,onChange, onClick}) => {
 
     return (
         <React.Fragment>
-            <div class="box">
+            <div class="box" >
                 <div class="searchbar-container ">
                     <FeatherIcon  icon="search" size="24"  />
-                    <input type="search" id="search"  />
-                    <button className="btn">Find Job</button>
+                    <input type="search" value={value} onChange={onChange} id="search"   />
+                    <button className="btn" onClick={onClick}>Find Job</button>
                 </div>
             </div>
         </React.Fragment>
