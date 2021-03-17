@@ -4,8 +4,7 @@
 
 <div style="width: 300px; height: 200px;border: 2px solid; margin: 20px auto;">
   <div style="">
-<h2>Armpen Authentication Activity</h2>
-<img src="screenshot.png" width= 200>
+<img src="screenshot.png" >
   </div>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
