@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
-import FeatherIcon from 'feather-icons-react';
 import "./jobfilter.css";
 
 
@@ -12,21 +10,7 @@ export const JobFilter = (props) => {
     })
 
     const toggleNav = () => setState({ ...state, isOpen: true });
-    const close = () => setState({ ...state, isOpen: true });
-    const items = [
-        {
-            id: 0,
-            text: 'Film  Animation'
-        },
-        {
-            id: 1,
-            text: '1 week ago'
-        },
-        {
-            id: 2,
-            text: 'Science Technology'
-        }
-    ];
+  
 
     return (
         <React.Fragment>

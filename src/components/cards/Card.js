@@ -1,11 +1,8 @@
-import React, { useState } from 'react'
-import { Link } from "react-router-dom";
+import React from 'react'
 import FeatherIcon from 'feather-icons-react';
 import "./card.css";
-import {jobsData} from '../../jobsData';
 
 export const Card = ({id ,iLike, onClick, jobTitle , company , country , city, jobDescription , props}) => {
-   
     return (
         <React.Fragment>
             <> 
@@ -28,21 +25,4 @@ export const Card = ({id ,iLike, onClick, jobTitle , company , country , city, j
         </React.Fragment>
     );
 
-
-
 }
-
-{/* <div className="stock-container">
-{stockData.map((data, key) => {
-  return (
-    <div key={key}>
-      <Stock
-        key={key}
-        company={data.company}
-        ticker={data.ticker}
-        stockPrice={data.stockPrice}
-        timeElapsed={data.timeElapsed}
-      />
-    </div>
-  );
-})} */}

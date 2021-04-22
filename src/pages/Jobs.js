@@ -1,11 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
 import SearchBar from "../components/searchbar/SearchBar";
 import { JobFilter } from "../components/filter/JobFilter";
 import { Card } from "../components/cards/Card";
 import { Board } from "../components/job-board/Board";
 import { jobsData } from '../jobsData';
-import moment from 'moment';
 
 const dateItems = [
   {
@@ -71,14 +69,6 @@ const jobTypeItem = [
 
 const Jobs = (props) => {
   const MAX_LENGTH = 180;
-  // var end = moment("2018-03-10", "YYYY-MM-DD");
-  // var start = moment("2018-03-24", "YYYY-MM-DD");
-
-  // //Difference in number of days
-  // console.log(moment.duration(start.diff(end)).asDays())
-
-  // //Difference in number of weeks
-  // console.log(moment.duration(start.diff(end)).asWeeks())
 
   const [state, setState] = useState({
     data: jobsData,
@@ -186,7 +176,7 @@ const Jobs = (props) => {
           <div className="flex h-full flex-col job-board-wrapper">
             {
               jobsData.map((data) => {
-
+                
                 if (data.id === state.selectedId) {
                   return (
                     <Board
@@ -203,7 +193,10 @@ const Jobs = (props) => {
                     />
                   )
                 }
-              })
+                return null;
+              }
+              
+              )
             }
           </div>
         ) : (
