@@ -33,6 +33,10 @@
     padding-right:10px
   }
    
+  .board-wrapper {
+    border-radius: 5px;
+    @apply relative overflow-hidden flex shadow-sm flex-col h-auto bg-white border border-gray-200 text-black md:w-full sm:w-full my-1;
+}
     .feather-inactive {
       stroke: #DBDBDB;
       stroke-width: 2;

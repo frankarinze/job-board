@@ -1,17 +1,75 @@
-
-
-@layer base{
-    .board-wrapper{
-        @apply  relative overflow-hidden flex shadow-sm flex-col
-        flex shadow-sm  h-auto bg-white border border-gray-200  text-black md:w-full  sm:w-full my-1;
-        border-radius:8px;
+@layer base {
+    .board-wrapper {
+        border-radius: 5px;
+        @apply relative overflow-hidden flex shadow-sm flex-col h-auto bg-white border border-gray-200 text-black md:w-full sm:w-full my-1;
     }
+    /* flex shadow-sm  bg-white border border-gray-200 text-black md: w-full sm:w-full my-1; */
     .board-header {
-        height:100px;
-        @apply p-5
-
+        /* height: auto;
+        overflow: auto;
+        position: -webkit-sticky;
+        position: sticky; */
+        top: 10%;
+        @apply px-6 pt-2 pb-6
     }
     .board-body {
-        @apply p-5
+        /* width: 80%; */
+        height: 60vh;
+        min-height: 100px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        @apply p-5 py-6
+    }
+    .board-body-empty{
+        height: 10vh;
+        min-height: 100px;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        @apply p-5 py-6
+    }
+    .board-top-header {
+        /* width: 85%; */
+        /* height: 25vh;
+        min-height: 200px; */
+        @apply flex flex-row justify-between pt-4
+    }
+    .board-header-title {
+        @apply text-2xl text-gray-700
+    }
+    .board-company {
+        @apply text-base text-blue-600 mr-2
+    }
+    .board-location {
+        @apply text-base text-gray-500 flex flex-row
+    }
+    /* .board-body {
+        @apply mt-2 flex flex-row
+    } */
+    .location-dot {
+        height: 12px;
+        min-width: 12px;
+        @apply bg-gray-300 border border-gray-300 rounded-lg m-1 mr-1
+    }
+    .board-date-posted {
+        @apply text-green-400
+    }
+    /* .board-description {
+        @apply text-gray-500
+    } */
+    .about-company-title {
+        @apply text-base text-gray-700 my-3
+    }
+    .job-description-title {
+        @apply text-base text-gray-700 my-3
+    }
+    .job-content {
+        @apply text-gray-500;
+        line-height: 1.5;
+        word-break: break-word;
+    }
+    .board-description-about {
+        @apply py-4
     }
 }

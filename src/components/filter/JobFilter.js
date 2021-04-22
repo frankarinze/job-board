@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import { Link } from "react-router-dom";
-import FeatherIcon from 'feather-icons-react';
 import "./jobfilter.css";
 
 
@@ -8,40 +6,27 @@ export const JobFilter = (props) => {
 
     const [state, setState] = useState({
         isOpen: false,
-        selectValue: 'Date posted',
+        selectValue: props.filterName,
     })
 
     const toggleNav = () => setState({ ...state, isOpen: true });
-    const close = () => setState({ ...state, isOpen: true });
-    const items = [
-        {
-            id: 0,
-            text: 'Film  Animation'
-        },
-        {
-            id: 1,
-            text: '1 week ago'
-        },
-        {
-            id: 2,
-            text: 'Science Technology'
-        }
-    ];
+  
 
     return (
         <React.Fragment>
             <div>
                 <div class="select-box mr-4 flex ">
                     <div className={!state.isOpen ?
-                        "options-container shadow-sm " :
-                        "options-container shadow-sm  active"}>
-                        {items.map((item) => (
+                        "options-container shadow-xl " :
+                        "options-container shadow-xl  active"}>
+                        {props.item.map((item) => (
                             <div
                                 className="option"
 
                                 id={item.id}
                                 onClick={() => {
                                     setState({ ...state, selectValue: item.text, isOpen: !state.isOpen });
+                                    props.handleDropDownChange(props.name, item.text)
                                 }}>
                                 <input type="radio" class="radio" id={`xx${item.id}`} name="category" />
                                 <label for="film">{item.text}</label>
